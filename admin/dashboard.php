@@ -1,6 +1,6 @@
 <?php
 include "security.php";
 
-echo "welcome, ".$username;
+echo "Selamat datang, ".$username;
 ?>
 <a href="logout.php">logout</a>
