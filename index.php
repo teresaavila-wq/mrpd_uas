@@ -1,5 +1,6 @@
 <?php
 include "header.php";
+include "koneksi.php";
 ?>
 
       <section id="jadwal">
@@ -7,42 +8,28 @@ include "header.php";
 
             <div class="jadwal-container">
 
+            <?php
+            $sql = "select * from jadwal_misa";
+            $query = mysqli_query($conn, $sql);
+            while($result = mysqli_fetch_array($query)){
+            ?>
+
                 <div class="jadwal-item">
-                    <span class="hari">Minggu</span>
-                    <div class="jam">
-                        <span class="badge">08.00 WIB</span>
-                        <span class="badge">18.00 WIB</span>
-                    </div>
+                <div>
+                    <span class="hari"><?= $result['hari']; ?></span>
+                    <p><?= $result['keterangan']; ?></p>
                 </div>
 
-                 <div class="divider"></div>
-
-            <div class="jadwal-item">
-                <span class="hari">Sabtu</span>
-                <div class="jam">
-                    <span class="badge">18.00 WIB</span>
+                 <div class="jadwal-item">
+                    <span class="badge"><?= $result['jam']; ?></span>
                 </div>
-            </div>
-
+                </div>
+                 
             <div class="divider"></div>
 
-            <div class="jadwal-item">
-                <span class="hari">Senin - Jumat (Misa Harian)</span>
-                <div class="jam">
-                    <span class="badge">05.30 WIB</span>
-                </div>
-            </div>
-
-            <div class="divider"></div>
-
-            <div class="jadwal-item">
-                <span class="hari">Hari Jumat Pertama Setiap Bulan</span>
-                <div class="jam">
-                    <span class="badge">18.00 WIB</span>
-                </div>
-            </div>
-
-            <div class="divider"></div>
+            <?php
+            }
+            ?>
 
             </div>
         </section>
