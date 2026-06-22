@@ -33,7 +33,7 @@ if (!$data) {
 <br><br>
 
 <form method="POST" action="ubah.php">
-    <input type="hidden" name="id" value="<?= $data['id_jadwal']; ?>">
+    <input type="hidden" name="id_jadwal" value="<?= $data['id_jadwal']; ?>">
 
     <label>Hari</label><br>
     <input type="text" name="hari" value="<?= htmlspecialchars($data['hari']); ?>">

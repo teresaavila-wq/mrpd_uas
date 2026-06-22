@@ -3,17 +3,18 @@ include "../security.php";
 include "../../koneksi.php";
 
 if (isset($_POST['ubah'])) {
-    $id = $_POST['id'];
-    $title = trim($_POST['title']);
-    $description = trim($_POST['description']);
-    $price = (int) $_POST['price'];
+    $id_jadwal = $_POST['id_jadwal'];
+    $hari = trim($_POST['hari']);
+    $jam = trim($_POST['jam']);
+    $keterangan = trim($_POST['keterangan']);
+    
 
-    if ($title == '' || $description == '' || $price <= 0 ) {
+    if ($hari == '' || $jam == '' || $keterangan == '' ) {
         echo "Semua field wajib diisi dengan benar.";
         exit;
     }
 
-    $sql = "update courses set name='$title', description='$description', price='$price' where id='$id'";
+    $sql = "update jadwal_misa set hari='$hari', jam='$jam', keterangan='$keterangan' where id_jadwal='$id_jadwal'";
     $query = mysqli_query($conn, $sql);
 
     if ($query) {
