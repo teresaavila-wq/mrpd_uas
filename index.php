@@ -15,13 +15,14 @@ include "koneksi.php";
             ?>
 
                 <div class="jadwal-item">
-                <div>
-                    <span class="hari"><?= $result['hari']; ?></span>
-                    <p><?= $result['keterangan']; ?></p>
+
+                <div class="hari-box">
+                <div class="hari"><?= $result['hari']; ?></div>
+
+                <div class="keterangan"><?= $result['keterangan']; ?></div>
                 </div>
 
-                 <div class="jadwal-item">
-                    <span class="badge"><?= $result['jam']; ?></span>
+                 <div class="jam"><span class="badge"><?= $result['jam']; ?></span>
                 </div>
                 </div>
                  
