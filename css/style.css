@@ -159,6 +159,16 @@ nav a {
     font-size: 14px;
 }
 
+.hari-box{
+    text-align: left;
+}
+
+.keterangan{
+    font-size: 14px;
+    color: #666;
+    margin-top: 5px;
+}
+
 .divider {
     height: 1px;
     background: #ddd;
