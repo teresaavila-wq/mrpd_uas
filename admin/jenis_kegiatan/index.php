@@ -6,7 +6,7 @@ $sql = "select * from jenis_kegiatan";
 $query = mysqli_query($conn, $sql);
 ?>
 <a href="../dashboard.php">Kembali ke Dashboard</a> |
-<a href="tambah.php">Tambah Jadwal Jenis Kegiatan</a>
+<a href="tambah.php">Tambah Jenis Kegiatan</a>
 
 <br><br>
 <table border="1">
@@ -18,7 +18,7 @@ $query = mysqli_query($conn, $sql);
         </tr>
     </thead>
     <tbody>
-        
+
         <?php
             $no = 1;
         while($result = mysqli_fetch_array($query)){
