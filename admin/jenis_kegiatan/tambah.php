@@ -8,8 +8,7 @@ if (isset($_POST['simpan'])) {
     if ($nama_kegiatan == '') {
         $error = "Semua field wajib diisi dengan benar.";
     } else {
-        $id_admin = 2;
-        $sql = "insert into jenis_kegiatan (nama_kegiatan) values('$nama_kegiatan)";
+        $sql = "insert into jenis_kegiatan (nama_kegiatan, id_kegiatan) values('$nama_kegiatan', '$id_kegiatan')";
         $query = mysqli_query($conn, $sql);
 
         if ($query) {
