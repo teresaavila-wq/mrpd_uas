@@ -40,7 +40,7 @@ if (isset($_POST['simpan'])) {
 <?php endif; ?>
 
 <form method="POST">
-    <label>Hari</label><br>
+    <label>Nama Kegiatan</label><br>
     <input type="text" name="nama_kegiatan">
     <br><br>
 
