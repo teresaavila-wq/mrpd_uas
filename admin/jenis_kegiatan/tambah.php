@@ -3,15 +3,13 @@ include "../security.php";
 include "../../koneksi.php";
 
 if (isset($_POST['simpan'])) {
-    $hari = trim($_POST['hari']);
-    $jam = trim($_POST['jam']);
-    $keterangan = trim($_POST['keterangan']);
+    $nama_kegiatan = trim($_POST['nama_kegiatan']);
 
-    if ($hari == '' || $jam == '' || $keterangan == '') {
+    if ($nama_kegiatan == '') {
         $error = "Semua field wajib diisi dengan benar.";
     } else {
         $id_admin = 2;
-        $sql = "insert into jadwal_misa (hari, jam, keterangan, id_admin) values('$hari', '$jam', '$keterangan', '$id_admin')";
+        $sql = "insert into jenis_kegiatan (nama_kegiatan) values('$nama_kegiatan)";
         $query = mysqli_query($conn, $sql);
 
         if ($query) {
@@ -27,11 +25,11 @@ if (isset($_POST['simpan'])) {
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Tambah Jadwal Misa</title>
+    <title>Tambah Jenis Kegiatan</title>
 </head>
 <body>
 
-<h1>Tambah Jadwal Misa</h1>
+<h1>Tambah Jenis Kegiatan</h1>
 
 <a href="index.php">Kembali</a>
 
@@ -43,15 +41,7 @@ if (isset($_POST['simpan'])) {
 
 <form method="POST">
     <label>Hari</label><br>
-    <input type="text" name="hari">
-    <br><br>
-
-    <label>Jam</label><br>
-    <input type="text" name="jam">
-    <br><br>
-
-    <label>Keterangan</label><br>
-    <textarea name="keterangan" rows="4" cols="40"></textarea>
+    <input type="text" name="nama_kegiatan">
     <br><br>
 
     <button type="submit" name="simpan">Simpan</button>
