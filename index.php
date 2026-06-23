@@ -45,7 +45,7 @@ include "koneksi.php";
                     <h3>Pendirian Kapel</h3>
                     <p>Sejarah Paroki Maria Ratu Pencinta Damai berawal dari keberadaan sebuah kapel di Gang Usaha 2 yang pada awalnya melayani umat Katolik yang masih termasuk dalam wilayah Paroki Katedral Santo Yosep, Pontianak.
                     Pada masa itu, gereja Katolik yang relatif mudah dijangkau oleh umat di wilayah ini hanyalah Gereja Katedral Pontianak, tetapi keterbatasan sarana transportasi membuat umat mengalami kesulitan untuk mengikuti perayaan Ekaristi secara rutin.<br><br>
-                    Keinginan umat untuk memiliki tempat ibadah yang lebih dekat mulai terwujud setelah Keuskupan Agung Pontianak membeli sebidang tanah di Gang Usaha 2 pada tanggal 18 April 1966. Di atas lahan tersebut kemudian didirikan sebuah bangunan dengan izin sebagai gedung serbaguna yang difungsikan sebagai kapel.
+                    Keinginan umat untuk memiliki tempat ibadah yang lebih dekat terwujud setelah Keuskupan Agung Pontianak membeli sebidang tanah di Gang Usaha 2 pada tanggal 18 April 1966. Di atas lahan tersebut kemudian didirikan sebuah bangunan dengan izin sebagai gedung serbaguna yang difungsikan sebagai kapel.
                     Misa pertama di Kapel Gang Usaha 2 dirayakan pada Hari Raya Paskah 14 April 1968 dan menjadi tonggak awal kehidupan menggereja umat di wilayah ini. Perayaan Ekaristi perdana tersebut disambut dengan sukacita oleh umat karena untuk pertama kalinya mereka dapat mengikuti misa di lingkungan yang dekat dengan tempat tinggal mereka. 
                     </p>
                 </div>
