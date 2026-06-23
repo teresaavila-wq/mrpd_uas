@@ -14,7 +14,7 @@ $query = mysqli_query($conn, $sql);
         <tr>
             <th>No</th>
             <th>Nama Kegiatan</th>
-            <th></th>
+        </th>
         </tr>
     </thead>
     <tbody>
