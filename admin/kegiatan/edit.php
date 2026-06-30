@@ -9,7 +9,7 @@ if ($id == '') {
     exit;
 }
 
-$sql = "select * from jenis_kegiatan where id_jenis='$id'";
+$sql = "select * from kegiatan where id_kegiatan='$id'";
 $query = mysqli_query($conn, $sql);
 $data = mysqli_fetch_assoc($query);
 
@@ -22,21 +22,21 @@ if (!$data) {
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Edit Jenis Kegiatan</title>
+    <title>Edit Kegiatan</title>
 </head>
 <body>
 
-<h1>Edit Jenis Kegiatan</h1>
+<h1>Edit Kegiatan</h1>
 
 <a href="index.php">Kembali</a>
 
 <br><br>
 
 <form method="POST" action="ubah.php">
-    <input type="hidden" name="id_jenis" value="<?= $data['id_jenis']; ?>">
+    <input type="hidden" name="id_kegiatan" value="<?= $data['id_kegiatan']; ?>">
 
-    <label>Nama Kegiatan</label><br>
-    <input type="text" name="nama_kegiatan" value="<?= htmlspecialchars($data['nama_kegiatan']); ?>">
+    <label>Deskripsi</label><br>
+    <input type="text" name="deskripsi" value="<?= htmlspecialchars($data['deskripsi']); ?>">
     <br><br>
 
     <button type="submit" name="ubah">Ubah</button>

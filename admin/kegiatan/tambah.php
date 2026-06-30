@@ -3,12 +3,12 @@ include "../security.php";
 include "../../koneksi.php";
 
 if (isset($_POST['simpan'])) {
-    $nama_kegiatan = trim($_POST['nama_kegiatan']);
+    $deskripsi = trim($_POST['deskripsi']);
 
-    if ($nama_kegiatan == '') {
+    if ($deskripsi == '') {
         $error = "Semua field wajib diisi dengan benar.";
     } else {
-        $sql = "insert into jenis_kegiatan (nama_kegiatan, id_kegiatan) values('$nama_kegiatan', '$id_kegiatan')";
+        $sql = "insert into kegiatan (deskripsi, id_admin) values('$deskripsi', '$id_admin')";
         $query = mysqli_query($conn, $sql);
 
         if ($query) {
@@ -24,11 +24,11 @@ if (isset($_POST['simpan'])) {
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Tambah Jenis Kegiatan</title>
+    <title>Tambah Deskripsi</title>
 </head>
 <body>
 
-<h1>Tambah Jenis Kegiatan</h1>
+<h1>Tambah Deskripsi</h1>
 
 <a href="index.php">Kembali</a>
 
@@ -39,8 +39,8 @@ if (isset($_POST['simpan'])) {
 <?php endif; ?>
 
 <form method="POST">
-    <label>Nama Kegiatan</label><br>
-    <input type="text" name="nama_kegiatan">
+    <label>Deskripsi</label><br>
+    <input type="text" name="deskripsi">
     <br><br>
 
     <button type="submit" name="simpan">Simpan</button>

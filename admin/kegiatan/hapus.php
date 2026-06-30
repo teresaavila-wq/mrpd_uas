@@ -9,7 +9,7 @@ if ($id == '') {
     exit;
 }
 
-$sql = "delete from jenis_kegiatan where id_jenis='$id'";
+$sql = "delete from kegiatan where id_kegiatan='$id'";
 $query = mysqli_query($conn, $sql);
 
 header("Location: index.php");
